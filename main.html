@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<header><h1>My title</h1></header>
-	<img alt="text">
-	<nav></nav>
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <header role="banner">
+        <h1 role="heading">Accessible Portfolio</h1>
+    </header>
+    <nav role="navigation">
+        <a href="#about" id="nav-about">About Me</a> |
+        <a href="#projects" id="nav-projects">Projects</a> |
+        <a href="#contact" id="nav-contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2 role="heading">About Me</h2>
+        <img src="profile.jpg" alt="A professional portrait of myself" role="img">
+        <p>I am a passionate software developer focused on creating accessible, scalable, and efficient solutions. I love working with modern web technologies and contributing to open-source projects.</p>
+    </section>
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web Design</li>
+            <li role="listitem">Project 2: Scalable Node.js API</li>
+            <li role="listitem">Project 3: Responsive React Application</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2 role="heading">Contact</h2>
+        <p>Feel free to reach out via email or connect with me on LinkedIn.</p>
+    </section>
+    <footer role="contentinfo">
+        <p>Produced by: Your Name</p>
+    </footer>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
